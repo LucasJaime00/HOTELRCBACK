@@ -50,7 +50,7 @@ export const editarHabitacion = async (req, res) => {
   try {
    
     const habitacionBuscado =  await Habitacion.findById(req.params.id);
-    //no encontre el producto buscado?
+    
     if(!habitacionBuscado){
        
         return res.status(404).json({mensaje: "la habitacion no fue encontrada."});

@@ -5,7 +5,7 @@ import 'dotenv/config'; //permite procesar variables de entorno
 import path from 'path';
 import { fileURLToPath } from 'url';
 import habitacionesRouter from './src/routes/habitaciones.routes.js';
-import usuarioRouter from './src/routes/usuarios.router.js';
+import usuarioRouter from './src/routes/usuarios.routes.js';
 import './src/database/database.js'
 
 
