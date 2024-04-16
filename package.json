@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "description": "Back de RChotel",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon --exec node index.js"
   },
   "keywords": [],
   "author": "Lucas Jaime",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }
