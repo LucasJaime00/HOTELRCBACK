@@ -29,9 +29,9 @@ const validacionHabitacion = [
   check("categoria")
     .notEmpty()
     .withMessage("La categoria es un dato obligatorio")
-    .isIn(["Infusiones", "Batidos", "Dulce", "Salado"])
+    .isIn(["JUNIOR SUITE", "SENIOR SUITE", "DELUXE SUITE", "SUITE OLIMPO"])
     .withMessage(
-      "La categoria debe ser una de las siguientes opciones ('Infusiones','Batidos','Dulce','Salado')"
+      "La categoria debe ser una de las siguientes opciones ('JUNIOR SUITE','SENIOR SUITE','DELUXE SUITE','SUITE OLIMPO')"
     ),
   check("descripcion_breve")
     .notEmpty()

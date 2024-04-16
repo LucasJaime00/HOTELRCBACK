@@ -28,7 +28,7 @@ const habitacionSchema = new Schema({
     categoria:{
         type:String,
         required:true,
-        enum:['Infusiones','Batidos','Dulce','Salado']
+        enum:['JUNIOR SUITE','SENIOR SUITE','DELUXE SUITE','SUITE OLIMPO']
     },
     descripcion_breve:{
         type:String,
@@ -44,7 +44,7 @@ const habitacionSchema = new Schema({
     }
 })
 
-/
-const Habitacion = mongoose.model('habitacion',habitacionSchema)
+
+const Habitacion = mongoose.model('habitacion', habitacionSchema)
 
 export default Habitacion;
