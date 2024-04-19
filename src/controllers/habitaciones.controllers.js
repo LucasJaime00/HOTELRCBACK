@@ -22,7 +22,7 @@ export const crearHabitacion = async (req, res) => {
     await habitacionNuevo.save();
     //enviar la respuesta al front
     res.status(201).json({
-      mensaje: "Ela habitacion fue creada correctamente",
+      mensaje: "La habitacion fue creada correctamente",
     });
   } catch (error) {
     console.error(error);
